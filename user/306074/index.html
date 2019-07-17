@@ -58,11 +58,11 @@
                 <ul class="numbers-summary user_profile_card_stats">
                     <li>
                         <div>Rank</div>
-                        <div>26</div>
+                        <div>33</div>
                     </li>
                     <li>
                         <div>Rating</div>
-                        <div>1530</div>
+                        <div>1491</div>
                     </li>
                 </ul>
             </div>
@@ -84,6 +84,19 @@
                         </tr>
                     </thead>
                     <tbody>
+                        
+                        <tr>
+                            <td><a href="/contest/311772/#user.306074">henuacm2019暑假训练Day4 DFS及其应用</a></td>
+                            <td><span class="flask-moment" data-timestamp="2019-07-17T02:17:00Z" data-format="format('LLL')" data-refresh="0" style="display: none">2019-07-17T02:17:00Z</span></td>
+                            <td>41</td>
+                            
+                            <td>1530→1491</td>
+                            
+                            
+                            <td style="color: red">
+                                -39</td>
+                            
+                        </tr>
                         
                         <tr>
                             <td><a href="/contest/311333/#user.306074">henuacm2019暑假训练Day3 排序和逆序对</a></td>
@@ -180,7 +193,7 @@ $(document).ready(function() {
 <!-- 引入 echarts.js -->
 <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
 <script>
-    var data = JSON.parse('[{"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day1 \u4f4d\u8fd0\u7b97\u4e0e(\u77e9\u9635)\u5feb\u901f\u5e42", "time": "2019-07-14T02:39:00Z", "rating": 1479}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day2 \u6a21\u62df\u548c\u8d2a\u5fc3", "time": "2019-07-15T02:06:00Z", "rating": 1484}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day3 \u6392\u5e8f\u548c\u9006\u5e8f\u5bf9", "time": "2019-07-16T02:40:00Z", "rating": 1530}]');
+    var data = JSON.parse('[{"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day1 \u4f4d\u8fd0\u7b97\u4e0e(\u77e9\u9635)\u5feb\u901f\u5e42", "time": "2019-07-14T02:39:00Z", "rating": 1479}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day2 \u6a21\u62df\u548c\u8d2a\u5fc3", "time": "2019-07-15T02:06:00Z", "rating": 1484}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day3 \u6392\u5e8f\u548c\u9006\u5e8f\u5bf9", "time": "2019-07-16T02:40:00Z", "rating": 1530}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day4 DFS\u53ca\u5176\u5e94\u7528", "time": "2019-07-17T02:17:00Z", "rating": 1491}]');
     var maxRating = Math.max.apply(null, data.map((x) => x.rating));
     var minRating = Math.min.apply(null, data.map((x) => x.rating));
     option = {
