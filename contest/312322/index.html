@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HENUACM</title>
+    
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" , rel="stylesheet" />
+    
+    
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">HENUACM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/rank_list/">Rank List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contest_list/">Contest List</a>
+                </li>
+        </div>
+    </nav>
+    
+
+    
+    <main class="container">
+        
+        
+
+<div class="main_bg card">
+    <h1>henuacm2019暑假训练Day6 最短路径</h1>
+    <p>
+        Start time: <span class="flask-moment" data-timestamp="2019-07-19T01:00:00Z" data-format="format('LLL')" data-refresh="0" style="display: none">2019-07-19T01:00:00Z</span> <br>
+        End time: <span class="flask-moment" data-timestamp="2019-07-19T10:00:00Z" data-format="format('LLL')" data-refresh="0" style="display: none">2019-07-19T10:00:00Z</span> <br>
+        Duration: 
+        <span class="flask-moment" data-is-duration="1" data-timestamp="2019-07-19T10:00:00Z"
+                       data-format="format('HH:mm:ss')" data-from=2019-07-19T01:00:00Z data-refresh="0"
+                       style="display: none">2019-07-19T10:00:00Z</span>
+         <br>
+        Participant count : 70 <br>
+        <a href="https://vjudge.net/contest/312322">Source</a>
+    </p>
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Username</th>
+                    <th>Solved</th>
+                    <th>Penalty</th>
+                    <th>Rating</th>
+                    <th>Δ</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <th>1</th>
+                    <td id="user.251938"><a
+                            href="/user/251938/">120789078</a></td>
+                    <td>6</td>
+                    <td>1524</td>
+                    
+                    <td>2152→2228</td>
+                    
+                    
+                    <td style="color: green">+76</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>2</th>
+                    <td id="user.295948"><a
+                            href="/user/295948/">IIHTHAN</a></td>
+                    <td>5</td>
+                    <td>1286</td>
+                    
+                    <td>1666→1815</td>
+                    
+                    
+                    <td style="color: green">+149</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>3</th>
+                    <td id="user.305835"><a
+                            href="/user/305835/">1812050112</a></td>
+                    <td>5</td>
+                    <td>1884</td>
+                    
+                    <td>1603→1744</td>
+                    
+                    
+                    <td style="color: green">+141</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>4</th>
+                    <td id="user.265738"><a
+                            href="/user/265738/">VillinNi</a></td>
+                    <td>4</td>
+                    <td>884</td>
+                    
+                    <td>1685→1782</td>
+                    
+                    
+                    <td style="color: green">+97</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>5</th>
+                    <td id="user.305860"><a
+                            href="/user/305860/">windbell620</a></td>
+                    <td>4</td>
+                    <td>887</td>
+                    
+                    <td>1966→1970</td>
+                    
+                    
+                    <td style="color: green">+4</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>6</th>
+                    <td id="user.260321"><a
+                            href="/user/260321/">wind_listen</a></td>
+                    <td>4</td>
+                    <td>1129</td>
+                    
+                    <td>1823→1853</td>
+                    
+                    
+                    <td style="color: green">+30</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>7</th>
+                    <td id="user.298461"><a
+                            href="/user/298461/">xieruipeng</a></td>
+                    <td>4</td>
+                    <td>1155</td>
+                    
+                    <td>1625→1701</td>
+                    
+                    
+                    <td style="color: green">+76</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>8</th>
+                    <td id="user.295455"><a
+                            href="/user/295455/">484591041</a></td>
+                    <td>4</td>
+                    <td>1186</td>
+                    
+                    <td>1684→1733</td>
+                    
+                    
+                    <td style="color: green">+49</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>9</th>
+                    <td id="user.252427"><a
+                            href="/user/252427/">lidongchen</a></td>
+                    <td>4</td>
+                    <td>1188</td>
+                    
+                    <td>1625→1683</td>
+                    
+                    
+                    <td style="color: green">+58</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>10</th>
+                    <td id="user.294249"><a
+                            href="/user/294249/">L_R_T</a></td>
+                    <td>4</td>
+                    <td>1228</td>
+                    
+                    <td>1570→1637</td>
+                    
+                    
+                    <td style="color: green">+67</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>11</th>
+                    <td id="user.252238"><a
+                            href="/user/252238/">yujunheng</a></td>
+                    <td>4</td>
+                    <td>1261</td>
+                    
+                    <td>1513→1590</td>
+                    
+                    
+                    <td style="color: green">+77</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>12</th>
+                    <td id="user.305802"><a
+                            href="/user/305802/">zmx2473162621</a></td>
+                    <td>4</td>
+                    <td>1438</td>
+                    
+                    <td>1634→1668</td>
+                    
+                    
+                    <td style="color: green">+34</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>13</th>
+                    <td id="user.284602"><a
+                            href="/user/284602/">ACMxiaocaiji</a></td>
+                    <td>3</td>
+                    <td>556</td>
+                    
+                    <td>1798→1782</td>
+                    
+                    
+                    <td style="color: red">
+                        -16</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>14</th>
+                    <td id="user.265752"><a
+                            href="/user/265752/">970326</a></td>
+                    <td>3</td>
+                    <td>656</td>
+                    
+                    <td>1460→1535</td>
+                    
+                    
+                    <td style="color: green">+75</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>15</th>
+                    <td id="user.252021"><a
+                            href="/user/252021/">benzikun</a></td>
+                    <td>3</td>
+                    <td>666</td>
+                    
+                    <td>1938→1876</td>
+                    
+                    
+                    <td style="color: red">
+                        -62</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>16</th>
+                    <td id="user.252191"><a
+                            href="/user/252191/">Sodeath</a></td>
+                    <td>3</td>
+                    <td>690</td>
+                    
+                    <td>1801→1769</td>
+                    
+                    
+                    <td style="color: red">
+                        -32</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>17</th>
+                    <td id="user.305814"><a
+                            href="/user/305814/">Chien</a></td>
+                    <td>3</td>
+                    <td>715</td>
+                    
+                    <td>1689→1681</td>
+                    
+                    
+                    <td style="color: red">
+                        -8</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>18</th>
+                    <td id="user.295655"><a
+                            href="/user/295655/">sxf1812030030</a></td>
+                    <td>3</td>
+                    <td>722</td>
+                    
+                    <td>1569→1590</td>
+                    
+                    
+                    <td style="color: green">+21</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>19</th>
+                    <td id="user.294313"><a
+                            href="/user/294313/">qgx</a></td>
+                    <td>3</td>
+                    <td>759</td>
+                    
+                    <td>1615→1619</td>
+                    
+                    
+                    <td style="color: green">+4</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>20</th>
+                    <td id="user.294967"><a
+                            href="/user/294967/">laaha</a></td>
+                    <td>3</td>
+                    <td>788</td>
+                    
+                    <td>1660→1647</td>
+                    
+                    
+                    <td style="color: red">
+                        -13</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>21</th>
+                    <td id="user.294228"><a
+                            href="/user/294228/">harry0306</a></td>
+                    <td>3</td>
+                    <td>799</td>
+                    
+                    <td>1624→1617</td>
+                    
+                    
+                    <td style="color: red">
+                        -7</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>22</th>
+                    <td id="user.305875"><a
+                            href="/user/305875/">EricMYH</a></td>
+                    <td>3</td>
+                    <td>801</td>
+                    
+                    <td>1654→1635</td>
+                    
+                    
+                    <td style="color: red">
+                        -19</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>23</th>
+                    <td id="user.294332"><a
+                            href="/user/294332/">HANHU</a></td>
+                    <td>3</td>
+                    <td>842</td>
+                    
+                    <td>1592→1586</td>
+                    
+                    
+                    <td style="color: red">
+                        -6</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>24</th>
+                    <td id="user.294449"><a
+                            href="/user/294449/">jiahongfu</a></td>
+                    <td>3</td>
+                    <td>871</td>
+                    
+                    <td>1626→1607</td>
+                    
+                    
+                    <td style="color: red">
+                        -19</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>25</th>
+                    <td id="user.252060"><a
+                            href="/user/252060/">lanjanha</a></td>
+                    <td>3</td>
+                    <td>877</td>
+                    
+                    <td>1548→1546</td>
+                    
+                    
+                    <td style="color: red">
+                        -2</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>26</th>
+                    <td id="user.306074"><a
+                            href="/user/306074/">Veegee</a></td>
+                    <td>3</td>
+                    <td>889</td>
+                    
+                    <td>1490→1500</td>
+                    
+                    
+                    <td style="color: green">+10</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>27</th>
+                    <td id="user.297639"><a
+                            href="/user/297639/">WYYZ</a></td>
+                    <td>3</td>
+                    <td>896</td>
+                    
+                    <td>1522→1520</td>
+                    
+                    
+                    <td style="color: red">
+                        -2</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>28</th>
+                    <td id="user.305904"><a
+                            href="/user/305904/">z___j</a></td>
+                    <td>3</td>
+                    <td>979</td>
+                    
+                    <td>1386→1419</td>
+                    
+                    
+                    <td style="color: green">+33</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>29</th>
+                    <td id="user.295006"><a
+                            href="/user/295006/">1812050110</a></td>
+                    <td>3</td>
+                    <td>993</td>
+                    
+                    <td>1477→1480</td>
+                    
+                    
+                    <td style="color: green">+3</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>30</th>
+                    <td id="user.294319"><a
+                            href="/user/294319/">100_1_11</a></td>
+                    <td>3</td>
+                    <td>1006</td>
+                    
+                    <td>1534→1518</td>
+                    
+                    
+                    <td style="color: red">
+                        -16</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>31</th>
+                    <td id="user.296288"><a
+                            href="/user/296288/">25263214</a></td>
+                    <td>3</td>
+                    <td>1038</td>
+                    
+                    <td>1419→1431</td>
+                    
+                    
+                    <td style="color: green">+12</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>32</th>
+                    <td id="user.294261"><a
+                            href="/user/294261/">notoginseng</a></td>
+                    <td>3</td>
+                    <td>1131</td>
+                    
+                    <td>1606→1566</td>
+                    
+                    
+                    <td style="color: red">
+                        -40</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>33</th>
+                    <td id="user.306049"><a
+                            href="/user/306049/">kinglu</a></td>
+                    <td>3</td>
+                    <td>1249</td>
+                    
+                    <td>1350→1375</td>
+                    
+                    
+                    <td style="color: green">+25</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>34</th>
+                    <td id="user.294277"><a
+                            href="/user/294277/">GLORIAGO</a></td>
+                    <td>3</td>
+                    <td>1334</td>
+                    
+                    <td>1487→1471</td>
+                    
+                    
+                    <td style="color: red">
+                        -16</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>35</th>
+                    <td id="user.305808"><a
+                            href="/user/305808/">1812050128</a></td>
+                    <td>3</td>
+                    <td>1641</td>
+                    
+                    <td>1456→1444</td>
+                    
+                    
+                    <td style="color: red">
+                        -12</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>36</th>
+                    <td id="user.294621"><a
+                            href="/user/294621/">wnh123</a></td>
+                    <td>2</td>
+                    <td>216</td>
+                    
+                    <td>1588→1541</td>
+                    
+                    
+                    <td style="color: red">
+                        -47</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>37</th>
+                    <td id="user.294671"><a
+                            href="/user/294671/">Yan_Sijin</a></td>
+                    <td>2</td>
+                    <td>244</td>
+                    
+                    <td>1517→1484</td>
+                    
+                    
+                    <td style="color: red">
+                        -33</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>38</th>
+                    <td id="user.305823"><a
+                            href="/user/305823/">Userao</a></td>
+                    <td>2</td>
+                    <td>343</td>
+                    
+                    <td>1424→1411</td>
+                    
+                    
+                    <td style="color: red">
+                        -13</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>39</th>
+                    <td id="user.296671"><a
+                            href="/user/296671/">li_jinhui</a></td>
+                    <td>2</td>
+                    <td>370</td>
+                    
+                    <td>1235→1274</td>
+                    
+                    
+                    <td style="color: green">+39</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>40</th>
+                    <td id="user.306305"><a
+                            href="/user/306305/">653020530</a></td>
+                    <td>2</td>
+                    <td>399</td>
+                    
+                    <td>1662→1588</td>
+                    
+                    
+                    <td style="color: red">
+                        -74</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>41</th>
+                    <td id="user.306075"><a
+                            href="/user/306075/">limingyu___</a></td>
+                    <td>2</td>
+                    <td>455</td>
+                    
+                    <td>1352→1348</td>
+                    
+                    
+                    <td style="color: red">
+                        -4</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>42</th>
+                    <td id="user.294206"><a
+                            href="/user/294206/">527932</a></td>
+                    <td>2</td>
+                    <td>467</td>
+                    
+                    <td>1479→1440</td>
+                    
+                    
+                    <td style="color: red">
+                        -39</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>43</th>
+                    <td id="user.296510"><a
+                            href="/user/296510/">zhouzhengci</a></td>
+                    <td>2</td>
+                    <td>472</td>
+                    
+                    <td>1364→1351</td>
+                    
+                    
+                    <td style="color: red">
+                        -13</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>44</th>
+                    <td id="user.296047"><a
+                            href="/user/296047/">sake_</a></td>
+                    <td>2</td>
+                    <td>494</td>
+                    
+                    <td>1189→1224</td>
+                    
+                    
+                    <td style="color: green">+35</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>45</th>
+                    <td id="user.294235"><a
+                            href="/user/294235/">qinmengdi</a></td>
+                    <td>2</td>
+                    <td>541</td>
+                    
+                    <td>1411→1379</td>
+                    
+                    
+                    <td style="color: red">
+                        -32</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>46</th>
+                    <td id="user.305826"><a
+                            href="/user/305826/">Flyshy</a></td>
+                    <td>2</td>
+                    <td>542</td>
+                    
+                    <td>1432→1393</td>
+                    
+                    
+                    <td style="color: red">
+                        -39</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>47</th>
+                    <td id="user.296285"><a
+                            href="/user/296285/">crise</a></td>
+                    <td>2</td>
+                    <td>564</td>
+                    
+                    <td>1256→1258</td>
+                    
+                    
+                    <td style="color: green">+2</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>48</th>
+                    <td id="user.305800"><a
+                            href="/user/305800/">1812030020</a></td>
+                    <td>2</td>
+                    <td>618</td>
+                    
+                    <td>1234→1239</td>
+                    
+                    
+                    <td style="color: green">+5</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>48</th>
+                    <td id="user.297034"><a
+                            href="/user/297034/">mesutozil</a></td>
+                    <td>2</td>
+                    <td>618</td>
+                    
+                    <td>1414→1373</td>
+                    
+                    
+                    <td style="color: red">
+                        -41</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>50</th>
+                    <td id="user.305906"><a
+                            href="/user/305906/">PENG_XIN</a></td>
+                    <td>2</td>
+                    <td>635</td>
+                    
+                    <td>1341→1310</td>
+                    
+                    
+                    <td style="color: red">
+                        -31</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>51</th>
+                    <td id="user.294215"><a
+                            href="/user/294215/">Iron_</a></td>
+                    <td>2</td>
+                    <td>726</td>
+                    
+                    <td>1371→1330</td>
+                    
+                    
+                    <td style="color: red">
+                        -41</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>52</th>
+                    <td id="user.305936"><a
+                            href="/user/305936/">l12123</a></td>
+                    <td>2</td>
+                    <td>737</td>
+                    
+                    <td>1377→1332</td>
+                    
+                    
+                    <td style="color: red">
+                        -45</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>53</th>
+                    <td id="user.297052"><a
+                            href="/user/297052/">young_people</a></td>
+                    <td>2</td>
+                    <td>754</td>
+                    
+                    <td>1349→1306</td>
+                    
+                    
+                    <td style="color: red">
+                        -43</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>54</th>
+                    <td id="user.297791"><a
+                            href="/user/297791/">Wanghao2</a></td>
+                    <td>2</td>
+                    <td>840</td>
+                    
+                    <td>1397→1341</td>
+                    
+                    
+                    <td style="color: red">
+                        -56</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>55</th>
+                    <td id="user.306047"><a
+                            href="/user/306047/">724608679</a></td>
+                    <td>2</td>
+                    <td>871</td>
+                    
+                    <td>1275→1242</td>
+                    
+                    
+                    <td style="color: red">
+                        -33</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>56</th>
+                    <td id="user.305821"><a
+                            href="/user/305821/">354511589</a></td>
+                    <td>2</td>
+                    <td>927</td>
+                    
+                    <td>1392→1331</td>
+                    
+                    
+                    <td style="color: red">
+                        -61</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>57</th>
+                    <td id="user.294522"><a
+                            href="/user/294522/">zysMeow</a></td>
+                    <td>2</td>
+                    <td>931</td>
+                    
+                    <td>1224→1195</td>
+                    
+                    
+                    <td style="color: red">
+                        -29</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>58</th>
+                    <td id="user.305811"><a
+                            href="/user/305811/">dajisi</a></td>
+                    <td>2</td>
+                    <td>982</td>
+                    
+                    <td>1408→1338</td>
+                    
+                    
+                    <td style="color: red">
+                        -70</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>59</th>
+                    <td id="user.296257"><a
+                            href="/user/296257/">W3c</a></td>
+                    <td>2</td>
+                    <td>1562</td>
+                    
+                    <td>1366→1301</td>
+                    
+                    
+                    <td style="color: red">
+                        -65</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>60</th>
+                    <td id="user.103023"><a
+                            href="/user/103023/">henuacm</a></td>
+                    <td>1</td>
+                    <td>28</td>
+                    
+                    <td>1306→1248</td>
+                    
+                    
+                    <td style="color: red">
+                        -58</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>61</th>
+                    <td id="user.298472"><a
+                            href="/user/298472/">1812030071</a></td>
+                    <td>1</td>
+                    <td>96</td>
+                    
+                    <td>1339→1272</td>
+                    
+                    
+                    <td style="color: red">
+                        -67</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>62</th>
+                    <td id="user.296302"><a
+                            href="/user/296302/">ASYT</a></td>
+                    <td>1</td>
+                    <td>100</td>
+                    
+                    <td>1305→1240</td>
+                    
+                    
+                    <td style="color: red">
+                        -65</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>63</th>
+                    <td id="user.305824"><a
+                            href="/user/305824/">username0031</a></td>
+                    <td>1</td>
+                    <td>155</td>
+                    
+                    <td>1394→1311</td>
+                    
+                    
+                    <td style="color: red">
+                        -83</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>64</th>
+                    <td id="user.306071"><a
+                            href="/user/306071/">weimofanchen</a></td>
+                    <td>1</td>
+                    <td>156</td>
+                    
+                    <td>1211→1152</td>
+                    
+                    
+                    <td style="color: red">
+                        -59</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>65</th>
+                    <td id="user.305899"><a
+                            href="/user/305899/">1812030044</a></td>
+                    <td>1</td>
+                    <td>162</td>
+                    
+                    <td>1235→1168</td>
+                    
+                    
+                    <td style="color: red">
+                        -67</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>66</th>
+                    <td id="user.294956"><a
+                            href="/user/294956/">12158</a></td>
+                    <td>1</td>
+                    <td>165</td>
+                    
+                    <td>1277→1200</td>
+                    
+                    
+                    <td style="color: red">
+                        -77</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>67</th>
+                    <td id="user.207018"><a
+                            href="/user/207018/">123_wind</a></td>
+                    <td>1</td>
+                    <td>230</td>
+                    
+                    <td>1318→1231</td>
+                    
+                    
+                    <td style="color: red">
+                        -87</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>68</th>
+                    <td id="user.295032"><a
+                            href="/user/295032/">xia18</a></td>
+                    <td>1</td>
+                    <td>271</td>
+                    
+                    <td>1265→1180</td>
+                    
+                    
+                    <td style="color: red">
+                        -85</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>69</th>
+                    <td id="user.265850"><a
+                            href="/user/265850/">zhixingheyi</a></td>
+                    <td>1</td>
+                    <td>433</td>
+                    
+                    <td>1302→1209</td>
+                    
+                    
+                    <td style="color: red">
+                        -93</td>
+                    
+                </tr>
+                
+                <tr>
+                    <th>70</th>
+                    <td id="user.216718"><a
+                            href="/user/216718/">aa200647963</a></td>
+                    <td>0</td>
+                    <td>0</td>
+                    
+                    <td>1437→1328</td>
+                    
+                    
+                    <td style="color: red">
+                        -109</td>
+                    
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    </main>
+    
+    
+    
+    <footer class="body_footer">
+            
+            All Copyright Reserved © 2008-2019 HENU ACM team
+            
+    </footer>
+    
+
+    
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/moment.js/2.18.1/moment-with-locales.min.js"></script>
+<script>
+moment.locale("en");
+function flask_moment_render(elem) {
+    if ($(elem).data('is-duration') === undefined){
+        $(elem).text(eval('moment("' + $(elem).data('timestamp') + '").' + $(elem).data('format') + ';'));
+    }else{
+        cmd = `moment.duration(moment('${$(elem).data('timestamp')}').diff('${$(elem).data('from')}')).${$(elem).data('format')};`
+        $(elem).text(eval(cmd));
+    }
+    $(elem).removeClass('flask-moment').show();
+}
+function flask_moment_render_all() {
+    $('.flask-moment').each(function() {
+        flask_moment_render(this);
+        if ($(this).data('refresh')) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data('refresh'));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+</script>
+    <script src="/static/js/moment_duration_formatter.js"></script>
+    
+</body>
+
+</html>

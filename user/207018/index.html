@@ -58,11 +58,11 @@
                 <ul class="numbers-summary user_profile_card_stats">
                     <li>
                         <div>Rank</div>
-                        <div>80</div>
+                        <div>88</div>
                     </li>
                     <li>
                         <div>Rating</div>
-                        <div>1318</div>
+                        <div>1231</div>
                     </li>
                 </ul>
             </div>
@@ -84,6 +84,19 @@
                         </tr>
                     </thead>
                     <tbody>
+                        
+                        <tr>
+                            <td><a href="/contest/312322/#user.207018">henuacm2019暑假训练Day6 最短路径</a></td>
+                            <td><span class="flask-moment" data-timestamp="2019-07-19T01:00:00Z" data-format="format('LLL')" data-refresh="0" style="display: none">2019-07-19T01:00:00Z</span></td>
+                            <td>67</td>
+                            
+                            <td>1318→1231</td>
+                            
+                            
+                            <td style="color: red">
+                                -87</td>
+                            
+                        </tr>
                         
                         <tr>
                             <td><a href="/contest/312073/#user.207018">henuacm2019暑假训练Day5 BFS</a></td>
@@ -169,7 +182,7 @@ $(document).ready(function() {
 <!-- 引入 echarts.js -->
 <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
 <script>
-    var data = JSON.parse('[{"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day1 \u4f4d\u8fd0\u7b97\u4e0e(\u77e9\u9635)\u5feb\u901f\u5e42", "time": "2019-07-14T02:39:00Z", "rating": 1416}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day5 BFS", "time": "2019-07-18T01:00:00Z", "rating": 1318}]');
+    var data = JSON.parse('[{"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day1 \u4f4d\u8fd0\u7b97\u4e0e(\u77e9\u9635)\u5feb\u901f\u5e42", "time": "2019-07-14T02:39:00Z", "rating": 1416}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day5 BFS", "time": "2019-07-18T01:00:00Z", "rating": 1318}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day6 \u6700\u77ed\u8def\u5f84", "time": "2019-07-19T01:00:00Z", "rating": 1231}]');
     var maxRating = Math.max.apply(null, data.map((x) => x.rating));
     var minRating = Math.min.apply(null, data.map((x) => x.rating));
     option = {

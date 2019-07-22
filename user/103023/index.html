@@ -58,11 +58,11 @@
                 <ul class="numbers-summary user_profile_card_stats">
                     <li>
                         <div>Rank</div>
-                        <div>81</div>
+                        <div>99</div>
                     </li>
                     <li>
                         <div>Rating</div>
-                        <div>1306</div>
+                        <div>1158</div>
                     </li>
                 </ul>
             </div>
@@ -84,6 +84,32 @@
                         </tr>
                     </thead>
                     <tbody>
+                        
+                        <tr>
+                            <td><a href="/contest/312557/#user.103023">henuacm2019暑假训练Day7 最小生成树</a></td>
+                            <td><span class="flask-moment" data-timestamp="2019-07-20T01:00:00Z" data-format="format('LLL')" data-refresh="0" style="display: none">2019-07-20T01:00:00Z</span></td>
+                            <td>47</td>
+                            
+                            <td>1248→1158</td>
+                            
+                            
+                            <td style="color: red">
+                                -90</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td><a href="/contest/312322/#user.103023">henuacm2019暑假训练Day6 最短路径</a></td>
+                            <td><span class="flask-moment" data-timestamp="2019-07-19T01:00:00Z" data-format="format('LLL')" data-refresh="0" style="display: none">2019-07-19T01:00:00Z</span></td>
+                            <td>60</td>
+                            
+                            <td>1306→1248</td>
+                            
+                            
+                            <td style="color: red">
+                                -58</td>
+                            
+                        </tr>
                         
                         <tr>
                             <td><a href="/contest/312073/#user.103023">henuacm2019暑假训练Day5 BFS</a></td>
@@ -169,7 +195,7 @@ $(document).ready(function() {
 <!-- 引入 echarts.js -->
 <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
 <script>
-    var data = JSON.parse('[{"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day4 DFS\u53ca\u5176\u5e94\u7528", "time": "2019-07-17T02:17:00Z", "rating": 1400}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day5 BFS", "time": "2019-07-18T01:00:00Z", "rating": 1306}]');
+    var data = JSON.parse('[{"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day4 DFS\u53ca\u5176\u5e94\u7528", "time": "2019-07-17T02:17:00Z", "rating": 1400}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day5 BFS", "time": "2019-07-18T01:00:00Z", "rating": 1306}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day6 \u6700\u77ed\u8def\u5f84", "time": "2019-07-19T01:00:00Z", "rating": 1248}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day7 \u6700\u5c0f\u751f\u6210\u6811", "time": "2019-07-20T01:00:00Z", "rating": 1158}]');
     var maxRating = Math.max.apply(null, data.map((x) => x.rating));
     var minRating = Math.min.apply(null, data.map((x) => x.rating));
     option = {

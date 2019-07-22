@@ -58,11 +58,11 @@
                 <ul class="numbers-summary user_profile_card_stats">
                     <li>
                         <div>Rank</div>
-                        <div>28</div>
+                        <div>41</div>
                     </li>
                     <li>
                         <div>Rating</div>
-                        <div>1534</div>
+                        <div>1421</div>
                     </li>
                 </ul>
             </div>
@@ -84,6 +84,32 @@
                         </tr>
                     </thead>
                     <tbody>
+                        
+                        <tr>
+                            <td><a href="/contest/312557/#user.294319">henuacm2019暑假训练Day7 最小生成树</a></td>
+                            <td><span class="flask-moment" data-timestamp="2019-07-20T01:00:00Z" data-format="format('LLL')" data-refresh="0" style="display: none">2019-07-20T01:00:00Z</span></td>
+                            <td>43</td>
+                            
+                            <td>1518→1421</td>
+                            
+                            
+                            <td style="color: red">
+                                -97</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td><a href="/contest/312322/#user.294319">henuacm2019暑假训练Day6 最短路径</a></td>
+                            <td><span class="flask-moment" data-timestamp="2019-07-19T01:00:00Z" data-format="format('LLL')" data-refresh="0" style="display: none">2019-07-19T01:00:00Z</span></td>
+                            <td>30</td>
+                            
+                            <td>1534→1518</td>
+                            
+                            
+                            <td style="color: red">
+                                -16</td>
+                            
+                        </tr>
                         
                         <tr>
                             <td><a href="/contest/312073/#user.294319">henuacm2019暑假训练Day5 BFS</a></td>
@@ -205,7 +231,7 @@ $(document).ready(function() {
 <!-- 引入 echarts.js -->
 <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
 <script>
-    var data = JSON.parse('[{"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day1 \u4f4d\u8fd0\u7b97\u4e0e(\u77e9\u9635)\u5feb\u901f\u5e42", "time": "2019-07-14T02:39:00Z", "rating": 1535}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day2 \u6a21\u62df\u548c\u8d2a\u5fc3", "time": "2019-07-15T02:06:00Z", "rating": 1549}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day3 \u6392\u5e8f\u548c\u9006\u5e8f\u5bf9", "time": "2019-07-16T02:40:00Z", "rating": 1601}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day4 DFS\u53ca\u5176\u5e94\u7528", "time": "2019-07-17T02:17:00Z", "rating": 1525}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day5 BFS", "time": "2019-07-18T01:00:00Z", "rating": 1534}]');
+    var data = JSON.parse('[{"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day1 \u4f4d\u8fd0\u7b97\u4e0e(\u77e9\u9635)\u5feb\u901f\u5e42", "time": "2019-07-14T02:39:00Z", "rating": 1535}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day2 \u6a21\u62df\u548c\u8d2a\u5fc3", "time": "2019-07-15T02:06:00Z", "rating": 1549}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day3 \u6392\u5e8f\u548c\u9006\u5e8f\u5bf9", "time": "2019-07-16T02:40:00Z", "rating": 1601}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day4 DFS\u53ca\u5176\u5e94\u7528", "time": "2019-07-17T02:17:00Z", "rating": 1525}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day5 BFS", "time": "2019-07-18T01:00:00Z", "rating": 1534}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day6 \u6700\u77ed\u8def\u5f84", "time": "2019-07-19T01:00:00Z", "rating": 1518}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day7 \u6700\u5c0f\u751f\u6210\u6811", "time": "2019-07-20T01:00:00Z", "rating": 1421}]');
     var maxRating = Math.max.apply(null, data.map((x) => x.rating));
     var minRating = Math.min.apply(null, data.map((x) => x.rating));
     option = {
