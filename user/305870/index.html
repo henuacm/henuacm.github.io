@@ -58,11 +58,11 @@
                 <ul class="numbers-summary user_profile_card_stats">
                     <li>
                         <div>Rank</div>
-                        <div>87</div>
+                        <div>96</div>
                     </li>
                     <li>
                         <div>Rating</div>
-                        <div>1235</div>
+                        <div>1179</div>
                     </li>
                 </ul>
             </div>
@@ -84,6 +84,32 @@
                         </tr>
                     </thead>
                     <tbody>
+                        
+                        <tr>
+                            <td><a href="/contest/315374/#user.305870">henuacm2019暑假训练Day14-简单动态规划</a></td>
+                            <td><span class="flask-moment" data-timestamp="2019-07-29T03:00:00Z" data-format="format('LLL')" data-refresh="0" style="display: none">2019-07-29T03:00:00Z</span></td>
+                            <td>44</td>
+                            
+                            <td>1210→1179</td>
+                            
+                            
+                            <td style="color: red">
+                                -31</td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td><a href="/contest/314934/#user.305870">henuacm2019暑假训练Day13-高精度运算</a></td>
+                            <td><span class="flask-moment" data-timestamp="2019-07-27T01:30:00Z" data-format="format('LLL')" data-refresh="0" style="display: none">2019-07-27T01:30:00Z</span></td>
+                            <td>39</td>
+                            
+                            <td>1235→1210</td>
+                            
+                            
+                            <td style="color: red">
+                                -25</td>
+                            
+                        </tr>
                         
                         <tr>
                             <td><a href="/contest/312073/#user.305870">henuacm2019暑假训练Day5 BFS</a></td>
@@ -195,7 +221,7 @@ $(document).ready(function() {
 <!-- 引入 echarts.js -->
 <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
 <script>
-    var data = JSON.parse('[{"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day1 \u4f4d\u8fd0\u7b97\u4e0e(\u77e9\u9635)\u5feb\u901f\u5e42", "time": "2019-07-14T02:39:00Z", "rating": 1433}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day2 \u6a21\u62df\u548c\u8d2a\u5fc3", "time": "2019-07-15T02:06:00Z", "rating": 1347}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day3 \u6392\u5e8f\u548c\u9006\u5e8f\u5bf9", "time": "2019-07-16T02:40:00Z", "rating": 1267}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day5 BFS", "time": "2019-07-18T01:00:00Z", "rating": 1235}]');
+    var data = JSON.parse('[{"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day1 \u4f4d\u8fd0\u7b97\u4e0e(\u77e9\u9635)\u5feb\u901f\u5e42", "time": "2019-07-14T02:39:00Z", "rating": 1433}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day2 \u6a21\u62df\u548c\u8d2a\u5fc3", "time": "2019-07-15T02:06:00Z", "rating": 1347}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day3 \u6392\u5e8f\u548c\u9006\u5e8f\u5bf9", "time": "2019-07-16T02:40:00Z", "rating": 1267}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day5 BFS", "time": "2019-07-18T01:00:00Z", "rating": 1235}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day13-\u9ad8\u7cbe\u5ea6\u8fd0\u7b97", "time": "2019-07-27T01:30:00Z", "rating": 1210}, {"name": "henuacm2019\u6691\u5047\u8bad\u7ec3Day14-\u7b80\u5355\u52a8\u6001\u89c4\u5212", "time": "2019-07-29T03:00:00Z", "rating": 1179}]');
     var maxRating = Math.max.apply(null, data.map((x) => x.rating));
     var minRating = Math.min.apply(null, data.map((x) => x.rating));
     option = {
